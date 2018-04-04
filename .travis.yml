@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - 9
+  - 8
+before_install:
+  - sudo add-apt-repository ppa:mc3man/trusty-media -y
+  - sudo apt-get update -q
+  - sudo apt-get install ffmpeg -y
