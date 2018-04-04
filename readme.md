@@ -7,6 +7,7 @@
 ![](https://raw.githubusercontent.com/transitive-bullshit/ffmpeg-concat/master/media/example.gif)
 
 *(example of 9 videos concatenated together with 8 unique transition)*
+*(note that the quality and fps is poor because it is only a GIF preview; [here]((https://raw.githubusercontent.com/transitive-bullshit/ffmpeg-concat/master/media/example.mp4)) is the original)*
 
 
 ## Intro
@@ -111,6 +112,8 @@ await concat({
 Concatenates video files together along with OpenGL transitions. Returns a `Promise` for when the output video has been written.
 
 Note that you must specify `videos`, `output`, and either `transition` or `transitions`.
+
+Note that the output video's size and fps are determined by the first input video.
 
 #### options
 
