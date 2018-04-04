@@ -53,6 +53,7 @@ npm install -g ffmpeg-concat
     ffmpeg-concat -t circleopen -d 750 -o huzzah.mp4 media/1.mp4 media/2.mp4 media/3.mp4
 ```
 
+
 ## Usage
 
 ```js
@@ -214,11 +215,13 @@ Here are some [gl-transitions](https://gl-transitions.com/) that I've found part
 - [cube](https://gl-transitions.com/editor/cube)
 - [swap](https://gl-transitions.com/editor/swap)
 
+
 ## Related
 
 - [ffmpeg-gl-transition](https://github.com/transitive-bullshit/ffmpeg-gl-transition) - Low-level ffmpeg filter for applying GLSL transitions between video streams ([gl-transitions](https://gl-transitions.com/)). It allows the use of more advanced and customizable filter graphs, but it requires you to build a custom version of ffmpeg.
 - [gl-transitions](https://gl-transitions.com/) - Collection of GLSL transitions.
 - [fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg) - Underlying ffmpeg wrapper library.
+
 
 ## License
 
