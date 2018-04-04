@@ -6,9 +6,9 @@
 
 ![](https://raw.githubusercontent.com/transitive-bullshit/ffmpeg-concat/master/media/example.gif)
 
-*(example of 9 videos concatenated together with 8 unique transition)*
+*(example of 9 videos concatenated together with unique transitions)*
 
-*(note that the quality and fps is poor because it is only a GIF preview; [here](https://raw.githubusercontent.com/transitive-bullshit/ffmpeg-concat/master/media/example.mp4) is the original)*
+*(note that the quality and fps is only poor due to the GIF preview; [here](https://raw.githubusercontent.com/transitive-bullshit/ffmpeg-concat/master/media/example.mp4) is the original)*
 
 
 ## Intro
