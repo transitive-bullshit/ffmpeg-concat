@@ -142,7 +142,7 @@ Note that you must specify either `transition` or `transitions`, depending on ho
 // example
 const transition = {
   duration: 1000, // ms
-  name: 'directionalwipe' // gl-transition name to use (will matched with lower-casing)
+  name: 'directionalwipe' // gl-transition name to use (will match with lower-casing)
 }
 ```
 
@@ -191,6 +191,24 @@ Default: `noop`
 
 Optional function to log progress and the underlying ffmpeg commands. You may, for example, use `console.log`
 
+
+## Transitions
+
+Here are some [gl-transitions](https://gl-transitions.com/) that I've found particularly useful for quality video transitions:
+
+- [fade](https://gl-transitions.com/editor/fade)
+- [fadegrayscale](https://gl-transitions.com/editor/fadegrayscale)
+- [circleopen](https://gl-transitions.com/editor/circleopen)
+- [directionalwarp](https://gl-transitions.com/editor/directionalwarp)
+- [directionalwipe](https://gl-transitions.com/editor/directionalwipe)
+- [crosswarp](https://gl-transitions.com/editor/crosswarp)
+- [crosszoom](https://gl-transitions.com/editor/CrossZoom)
+- [dreamy](https://gl-transitions.com/editor/Dreamy)
+- [squareswire](https://gl-transitions.com/editor/squareswire)
+- [angular](https://gl-transitions.com/editor/angular)
+- [radial](https://gl-transitions.com/editor/Radial)
+- [cube](https://gl-transitions.com/editor/cube)
+- [swap](https://gl-transitions.com/editor/swap)
 
 ## Related
 
