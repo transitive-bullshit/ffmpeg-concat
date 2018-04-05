@@ -50,7 +50,7 @@ npm install -g ffmpeg-concat
 
   Example:
 
-    ffmpeg-concat -t circleopen -d 750 -o huzzah.mp4 media/1.mp4 media/2.mp4 media/3.mp4
+    ffmpeg-concat -t circleopen -d 750 -o huzzah.mp4 0.mp4 1.mp4 2.mp4
 ```
 
 
