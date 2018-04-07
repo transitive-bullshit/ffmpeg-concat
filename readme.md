@@ -45,6 +45,7 @@ npm install -g ffmpeg-concat
     -d, --transition-duration <duration>  duration of transition to use in ms (default: 500)
     -T, --transitions <file>              json file to load transitions from
     -f, --frame-format <format>           format to use for temp frame images (default: raw)
+    -c, --concurrency <number>            number of videos to process in parallel (default: 4)
     -C, --no-cleanup-frames               disables cleaning up temp frame images
     -h, --help                            output usage information
 
@@ -188,6 +189,13 @@ Type: `boolean`
 Default: `true`
 
 By default, we cleanup temporary frame images. Set this to `false` if you need to debug intermediate results.
+
+##### concurrency
+
+Type: `Number`
+Default: `4`
+
+Max number of videos to process in parallel.
 
 ##### log
 
