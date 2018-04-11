@@ -174,6 +174,13 @@ const transitions = [
 ]
 ```
 
+##### audio
+
+Type: `String`
+**Required**
+
+Path or URL to an audio file to use as the audio track for the output video.
+
 ##### frameFormat
 
 Type: `string`
