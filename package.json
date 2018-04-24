@@ -1,6 +1,6 @@
 {
   "name": "ffmpeg-concat",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Concats a list of videos together using ffmpeg with sexy OpenGL transitions.",
   "main": "index.js",
   "repository": "transitive-bullshit/ffmpeg-concat",
