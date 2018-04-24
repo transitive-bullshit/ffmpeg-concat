@@ -33,7 +33,7 @@
   "dependencies": {
     "commander": "^2.15.1",
     "ffmpeg-on-progress": "^1.0.0",
-    "ffmpeg-probe": "^1.0.3",
+    "ffmpeg-probe": "^1.0.4",
     "fluent-ffmpeg": "^2.1.2",
     "fs-extra": "^5.0.0",
     "get-pixels": "^3.3.0",

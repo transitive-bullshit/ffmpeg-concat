@@ -1542,9 +1542,9 @@ ffmpeg-on-progress@^1.0.0:
   dependencies:
     hh-mm-ss "^1.2.0"
 
-ffmpeg-probe@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/ffmpeg-probe/-/ffmpeg-probe-1.0.3.tgz#5dc99338e8bafb73f2467bb220cd0a886ba7e1fd"
+ffmpeg-probe@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/ffmpeg-probe/-/ffmpeg-probe-1.0.4.tgz#f2b822d65b7a414f7f8f72bcac15d06d4ec25200"
   dependencies:
     execa "^0.10.0"
 
