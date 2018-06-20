@@ -214,6 +214,13 @@ Default: `noop`
 
 Optional function to log progress and the underlying ffmpeg commands. You may, for example, use `console.log`
 
+##### workingDir
+
+Type: `string`
+Default: ``
+
+The working dir in which you want concat to work. e.g. /mnt/mine
+if not provided, /tmp will be used as working directory
 
 ## Transitions
 
