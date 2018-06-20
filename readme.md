@@ -70,8 +70,7 @@ await concat({
   ],
   transition: {
     name: 'directionalWipe',
-    duration: 500,
-    params: {direction: [1, -1]}
+    duration: 500
   }
 })
 ```
@@ -98,7 +97,9 @@ await concat({
     },
     {
       name: 'directionalWarp',
-      duration: 500
+      duration: 500,
+      // pass custom params to a transition
+      params: { direction: [ 1, -1 ] }
     },
     {
       name: 'squaresWire',
@@ -150,7 +151,7 @@ Note that you must specify either `transition` or `transitions`, depending on ho
 const transition = {
   duration: 1000, // ms
   name: 'directionalwipe', // gl-transition name to use (will match with lower-casing)
-  params: {direction: [1, -1]} // optionally override default parameters
+  params: { direction: [1, -1] } // optionally override default parameters
 }
 ```
 
