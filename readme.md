@@ -70,7 +70,8 @@ await concat({
   ],
   transition: {
     name: 'directionalWipe',
-    duration: 500
+    duration: 500,
+    params: {direction: [1, -1]}
   }
 })
 ```
@@ -148,7 +149,8 @@ Note that you must specify either `transition` or `transitions`, depending on ho
 // example
 const transition = {
   duration: 1000, // ms
-  name: 'directionalwipe' // gl-transition name to use (will match with lower-casing)
+  name: 'directionalwipe', // gl-transition name to use (will match with lower-casing)
+  params: {direction: [1, -1]} // optionally override default parameters
 }
 ```
 
