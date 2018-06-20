@@ -47,6 +47,7 @@ npm install -g ffmpeg-concat
     -f, --frame-format <format>           format to use for temp frame images (default: raw)
     -c, --concurrency <number>            number of videos to process in parallel (default: 4)
     -C, --no-cleanup-frames               disables cleaning up temp frame images
+    -td, --temp-directory <dirPath>       denote a custom location for temp image files to be saved to (default is OS temp directory)
     -h, --help                            output usage information
 
   Example:
@@ -196,6 +197,16 @@ Type: `boolean`
 Default: `true`
 
 By default, we cleanup temporary frame images. Set this to `false` if you need to debug intermediate results.
+
+##### tempDirectory
+
+Type: `string`
+
+By default, ffmpeg-concat uses your OS' standard temp folder to save frame images to.
+`Windows`: C:\Users\{your username}\AppData\local\Temp
+`Mac`: /private/var/
+
+NOTE: You must provide a path you have write permissions to otherwise this will not work
 
 ##### concurrency
 
