@@ -193,13 +193,6 @@ The format for temporary frame images. You may, for example, use `png` or `jpg`.
 
 Note: the default is `raw` for performance reasons, as writing and reading raw binary pixel data is much faster than encoding and decoding `png` frames. Raw format is difficult to preview and debug, however, in which case you may want to change `frameFormat` to `png`.
 
-##### cleanupFrames
-
-Type: `boolean`
-Default: `true`
-
-By default, we cleanup temporary frame images. Set this to `false` if you need to debug intermediate results.
-
 ##### concurrency
 
 Type: `Number`
@@ -214,13 +207,19 @@ Default: `noop`
 
 Optional function to log progress and the underlying ffmpeg commands. You may, for example, use `console.log`
 
-##### workingDir
+##### cleanupFrames
+
+Type: `boolean`
+Default: `true`
+
+By default, we cleanup temporary frame images. Set this to `false` if you need to debug intermediate results.
+
+##### tempDir
 
 Type: `string`
-Default: ``
+Default: random  directory in `/tmp`
 
-The working dir in which you want concat to work. e.g. /mnt/mine
-if not provided, /tmp will be used as working directory
+The temporary working directory to store intermediate frame data. This is where the frames in `cleanupFrames` will be saved.
 
 ## Transitions
 
