@@ -47,6 +47,7 @@ npm install -g ffmpeg-concat
     -f, --frame-format <format>           format to use for temp frame images (default: raw)
     -c, --concurrency <number>            number of videos to process in parallel (default: 4)
     -C, --no-cleanup-frames               disables cleaning up temp frame images
+    -O, --temp-dir <dir>                  temporary working directory to store frame data
     -h, --help                            output usage information
 
   Example:
