@@ -98,7 +98,9 @@ await concat({
     },
     {
       name: 'directionalWarp',
-      duration: 500
+      duration: 500,
+      // pass custom params to a transition
+      params: { direction: [ 1, -1 ] }
     },
     {
       name: 'squaresWire',
@@ -149,7 +151,8 @@ Note that you must specify either `transition` or `transitions`, depending on ho
 // example
 const transition = {
   duration: 1000, // ms
-  name: 'directionalwipe' // gl-transition name to use (will match with lower-casing)
+  name: 'directionalwipe', // gl-transition name to use (will match with lower-casing)
+  params: { direction: [1, -1] } // optionally override default parameters
 }
 ```
 
@@ -191,12 +194,6 @@ The format for temporary frame images. You may, for example, use `png` or `jpg`.
 
 Note: the default is `raw` for performance reasons, as writing and reading raw binary pixel data is much faster than encoding and decoding `png` frames. Raw format is difficult to preview and debug, however, in which case you may want to change `frameFormat` to `png`.
 
-##### cleanupFrames
-
-Type: `boolean`
-Default: `true`
-
-By default, we cleanup temporary frame images. Set this to `false` if you need to debug intermediate results.
 
 ##### tempDirectory
 
@@ -222,6 +219,19 @@ Default: `noop`
 
 Optional function to log progress and the underlying ffmpeg commands. You may, for example, use `console.log`
 
+##### cleanupFrames
+
+Type: `boolean`
+Default: `true`
+
+By default, we cleanup temporary frame images. Set this to `false` if you need to debug intermediate results.
+
+##### tempDir
+
+Type: `string`
+Default: random  directory in `/tmp`
+
+The temporary working directory to store intermediate frame data. This is where the frames in `cleanupFrames` will be saved.
 
 ## Transitions
 
