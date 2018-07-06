@@ -6,6 +6,7 @@
   "repository": "transitive-bullshit/ffmpeg-concat",
   "author": "Travis Fischer <travis@automagical.ai>",
   "license": "MIT",
+  "reveal": true,
   "scripts": {
     "test": "ava -v && standard"
   },
