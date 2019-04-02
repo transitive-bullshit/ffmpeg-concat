@@ -10,6 +10,8 @@
 
 *(note that the quality and fps is only poor due to the GIF preview; [here](https://raw.githubusercontent.com/transitive-bullshit/ffmpeg-concat/master/media/example.mp4) is the original)*
 
+- [![china](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **中文/Chinese**](https://github.com/transitive-bullshit/ffmpeg-concat/blob/master/readme.zh.md)
+
 
 ## Intro
 
