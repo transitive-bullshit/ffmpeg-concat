@@ -1960,7 +1960,7 @@ gl-transitions@^1.43.0:
   resolved "https://registry.yarnpkg.com/gl-transitions/-/gl-transitions-1.43.0.tgz#790ce78f6713c75caba2b354764d7497971edcfd"
   integrity sha1-eQznj2cTx1yrorNUdk10l5ce3P0=
 
-gl@^4.0.4:
+gl@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/gl/-/gl-4.2.2.tgz#e5aa1a7a9ccb5f36464763ff9454f41f2fa59424"
   integrity sha512-RiFX+eUrMiVXyYaO1/tsHE8ex+a/52GY2mTE5MjUWE6gJvRFqGYwE6psPtEeiucBlX7DDmHe2QjJ4qyT/ubrYA==

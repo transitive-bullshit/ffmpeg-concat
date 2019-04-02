@@ -37,7 +37,7 @@
     "fluent-ffmpeg": "^2.1.2",
     "fs-extra": "^7.0.1",
     "get-pixels": "^3.3.2",
-    "gl": "^4.0.4",
+    "gl": "^4.2.2",
     "gl-buffer": "^2.1.2",
     "gl-texture2d": "^2.1.0",
     "gl-transition": "^1.13.0",

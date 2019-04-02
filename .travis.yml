@@ -10,6 +10,9 @@ addons:
     - mesa-utils
     - xvfb
     - libgl1-mesa-dri
+    - libxi-dev
+    - xserver-xorg-dev
+    - libxext-dev
     - libglapi-mesa
     - libosmesa6
 before_script:
