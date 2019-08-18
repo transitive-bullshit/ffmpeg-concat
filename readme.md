@@ -12,7 +12,6 @@
 
 - [![china](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **中文/Chinese**](https://github.com/transitive-bullshit/ffmpeg-concat/blob/master/readme.zh.md)
 
-
 ## Intro
 
 [FFmpeg](http://ffmpeg.org/) is the de facto standard in command-line video editing, but it is really difficult to concatenate videos together using non-trivial transitions. Here are some [convoluted](https://superuser.com/questions/778762/crossfade-between-2-videos-using-ffmpeg) [examples](https://video.stackexchange.com/questions/17502/concate-two-video-file-with-fade-effect-with-ffmpeg-in-linux) of a simple cross-fade between two videos. FFmpeg filter graphs are extremely powerful, but for implementing transitions, they are just too complicated and error-prone.
@@ -20,7 +19,6 @@
 [GL Transitions](https://gl-transitions.com/), on the other hand, is a great open source initiative spearheaded by [Gaëtan Renaudeau](https://github.com/gre) that is aimed at using GLSL to establish a universal [collection](https://gl-transitions.com/gallery) of transitions. Its extremely simple spec makes it really easy to customize existing transitions or write your own as opposed to struggling with complex ffmpeg filter graphs.
 
 **This module and CLI make it easy to concat videos together using gl-transitions.**
-
 
 ## Install
 
@@ -32,7 +30,6 @@ npm install --save ffmpeg-concat
 # or if you want to use the CLI
 npm install -g ffmpeg-concat
 ```
-
 
 ## CLI
 
@@ -56,7 +53,6 @@ npm install -g ffmpeg-concat
 
     ffmpeg-concat -t circleopen -d 750 -o huzzah.mp4 0.mp4 1.mp4 2.mp4
 ```
-
 
 ## Usage
 
@@ -111,7 +107,6 @@ await concat({
   ]
 })
 ```
-
 
 ## API
 
@@ -183,9 +178,11 @@ const transitions = [
 ##### audio
 
 Type: `String`
-**Required**
+**Optional**
 
 Path or URL to an audio file to use as the audio track for the output video.
+
+if parameter is not provided - assuming user wants to concat the source scenes audio.
 
 ##### frameFormat
 
@@ -242,14 +239,12 @@ Here are some [gl-transitions](https://gl-transitions.com/) that I've found part
 - [cube](https://gl-transitions.com/editor/cube)
 - [swap](https://gl-transitions.com/editor/swap)
 
-
 ## Related
 
 - [ffmpeg-gl-transition](https://github.com/transitive-bullshit/ffmpeg-gl-transition) - Low-level ffmpeg filter for applying GLSL transitions between video streams ([gl-transitions](https://gl-transitions.com/)). It allows the use of more advanced and customizable filter graphs, but it requires you to build a custom version of ffmpeg.
 - [gl-transitions](https://gl-transitions.com/) - Collection of GLSL transitions.
 - [fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg) - Underlying ffmpeg wrapper library.
 - [awesome-ffmpeg](https://github.com/transitive-bullshit/awesome-ffmpeg) - A curated list of awesome ffmpeg resources with a focus on JavaScript.
-
 
 ## License
 

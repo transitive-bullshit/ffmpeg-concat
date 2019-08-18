@@ -15,6 +15,7 @@ dist
 .env.test.local
 .env.production.local
 .cache
+.vscode
 
 temp
 out.mp4
