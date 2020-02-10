@@ -31,6 +31,10 @@ npm install --save ffmpeg-concat
 npm install -g ffmpeg-concat
 ```
 
+This package runs on Linux, macOS, and Windows.
+
+Node.js versions 8 and up are supported. Note (**macOS only**): due to an inadvertant low-level breaking change in libuv's process handling code, OpenGL [is not supported](https://github.com/stackgl/headless-gl#supported-platforms-and-nodejs-versions) when running Node.js version 12.13.1 through to 13.6.0 on macOS. A fix has been released in Node.js version 13.7.0. A fix for 12.x is pending. Other platforms are unaffected.
+
 ## CLI
 
 ```sh
@@ -47,6 +51,7 @@ npm install -g ffmpeg-concat
     -c, --concurrency <number>            number of videos to process in parallel (default: 4)
     -C, --no-cleanup-frames               disables cleaning up temp frame images
     -O, --temp-dir <dir>                  temporary working directory to store frame data
+    -v, --verbose                         enable verbose logging from FFmpeg
     -h, --help                            output usage information
 
   Example:

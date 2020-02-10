@@ -37,7 +37,7 @@
     "fluent-ffmpeg": "^2.1.2",
     "fs-extra": "^7.0.1",
     "get-pixels": "^3.3.2",
-    "gl": "^4.2.2",
+    "gl": "^4.4.1",
     "gl-buffer": "^2.1.2",
     "gl-texture2d": "^2.1.0",
     "gl-transition": "^1.13.0",
@@ -47,8 +47,11 @@
     "p-map": "^2.0.0",
     "p-race": "^2.0.0",
     "rmfr": "^2.0.0",
-    "sharp": "^0.22.0",
+    "sharp": "^0.24.0",
     "tempy": "^0.2.1",
     "url-parse": "^1.4.4"
+  },
+  "ava": {
+    "failFast": true
   }
 }
