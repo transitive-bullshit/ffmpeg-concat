@@ -181,6 +181,13 @@ const transitions = [
 
 音频文件的路径或URL,用作 输出视频 的音轨.
 
+##### args
+
+类型: `Array<String>`
+**必需**
+
+默认值: `['-c:v', 'libx264', '-profile:v', 'main', '-preset', 'medium', '-crf 20', '-movflags', 'faststart']`
+
 ##### frameFormat
 
 类型: `string`默认: `raw`
