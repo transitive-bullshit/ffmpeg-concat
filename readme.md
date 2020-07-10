@@ -189,6 +189,15 @@ Path or URL to an audio file to use as the audio track for the output video.
 
 if parameter is not provided - assuming user wants to concat the source scenes audio.
 
+##### args
+
+Type: `Array<String>`
+**Optional**
+
+Default: `['-c:v', 'libx264', '-profile:v', 'main', '-preset', 'medium', '-crf 20', '-movflags', 'faststart']`
+
+Array of output-only ffmpeg command line arguments for the final video.
+
 ##### frameFormat
 
 Type: `string`
