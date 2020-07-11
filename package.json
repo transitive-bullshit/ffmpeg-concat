@@ -10,7 +10,7 @@
     "test": "ava -v && standard"
   },
   "bin": {
-    "ffmpeg-concat": "./bin/ffmperg-concat"
+    "ffmpeg-concat": "./bin/ffmpeg-concat"
   },
   "engines": {
     "node": ">=10.13.0"
