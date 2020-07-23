@@ -1,6 +1,6 @@
 {
   "name": "ffmpeg-concat",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Concats a list of videos together using ffmpeg with sexy OpenGL transitions.",
   "repository": "transitive-bullshit/ffmpeg-concat",
   "author": "Travis Fischer <travis@transitivebullsh.it>",
