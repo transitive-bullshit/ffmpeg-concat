@@ -79,6 +79,24 @@ await concat({
 ```
 
 ```js
+const concat = require('ffmpeg-concat')
+
+// concat 3 mp4s together taking only the middle 2 seconds of video 2
+await concat({
+  output: 'test.mp4',
+  videos: [
+    'media/0.mp4',
+    { video: 'media/1.mp4', start: 1000, duration: 2000 },
+    'media/2.mp4'
+  ],
+  transition: {
+    name: 'directionalWipe',
+    duration: 500
+  }
+})
+```
+
+```js
 // concat 5 mp4s together using 4 different transitions
 await concat({
   output: 'test.mp4',
