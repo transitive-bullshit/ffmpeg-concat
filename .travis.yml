@@ -1,9 +1,9 @@
 language: node_js
 node_js:
   - 12
+  - 14
+  - 16
 os: linux
-sudo: required
-dist: trusty
 addons:
   apt:
     packages:
