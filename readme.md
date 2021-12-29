@@ -37,7 +37,7 @@ Node.js versions 10.13.0 and up are supported. Note (**macOS only**): due to an 
 
 ### Docker
 
-A multi-platform and arch Docker image can be used for debugging and cross platform needs (requires [Docker](https://www.docker.com/) installed), as well as avoiding requiring `ffmpeg` and node dependencies installed locally.
+A multi-platform and multi-arch Docker image can be used for debugging and cross platform needs (requires [Docker](https://www.docker.com/) installed), as well as avoiding requiring `ffmpeg` and node dependencies installed locally.
 
 Docker image build:
 ```bash
@@ -57,7 +57,7 @@ npm run docker -- media/0.mp4 media/1.mp4
 DIR=/path/to/vids/dir npm run docker -- file1.mov file2.avi
 ```
 
-See [package.json](./package.json), and [Dockerfile](./Dockerfile) for more info.
+See [package.json](./package.json), and [Dockerfile](./Dockerfile) for more details.
 
 ## CLI
 
