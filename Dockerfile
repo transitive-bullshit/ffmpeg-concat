@@ -6,11 +6,8 @@ RUN apt-get install build-essential wget pkg-config xvfb libxi-dev libglu1-mesa-
 
 # install ffmpeg
 RUN wget --no-check-certificate -O /tmp/ffmpeg.tar.xz \
-  "https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-$( \
-    [ $(arch) = aarch64 ] && echo arm64 || arch)-static.tar.xz" \
-  && mkdir /usr/local/ffmpeg \
-  && cd /usr/local/ffmpeg \
-  && tar xvf /tmp/ffmpeg.tar.xz --strip-components=1
+  "https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-$(dpkg --print-architecture)-static.tar.xz" \
+  && mkdir /usr/local/ffmpeg && cd /usr/local/ffmpeg && tar xvf /tmp/ffmpeg.tar.xz --strip-components=1
 ENV PATH=/usr/local/ffmpeg:$PATH
 
 # upgrade vips
@@ -27,7 +24,7 @@ WORKDIR /app
 ADD .nvmrc /app/.nvmrc
 RUN wget --no-check-certificate \
   "https://nodejs.org/dist/v$(cat .nvmrc)/node-v$(cat .nvmrc)-linux-$( \
-    [ $(arch) = aarch64 ] && echo arm64 || arch).tar.gz" \
+    [ $(dpkg --print-architecture) = amd64 ] && echo x64 || dpkg --print-architecture).tar.gz" \
   -O /tmp/node.tar.gz \
   && tar -xf /tmp/node.tar.gz -C /usr/local --strip-components=1 \
   && rm /tmp/node.tar.gz
@@ -35,8 +32,7 @@ RUN wget --no-check-certificate \
 ADD package*.json /app
 RUN npm install
 
-RUN mkdir /app/lib
-ADD *.js *.sh /app
+ADD *.js *.sh /app/
 ADD lib /app/lib
 ADD media /app/media
 
