@@ -13,7 +13,10 @@
     "node": ">=10.13.0"
   },
   "scripts": {
-    "test": "ava -v && standard"
+    "test": "ava -v && standard",
+    "docker-build": "docker build . -t ffmpeg-concat",
+    "docker-test": "docker build . -t ffmpeg-concat && docker run --init ffmpeg-concat npm run test",
+    "docker": "docker run --init -v ${DIR:-$(pwd)}:/vids -w /vids ffmpeg-concat"
   },
   "keywords": [
     "ffmpeg",

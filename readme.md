@@ -35,6 +35,30 @@ This package runs on Linux, macOS, and Windows.
 
 Node.js versions 10.13.0 and up are supported. Note (**macOS only**): due to an inadvertant low-level breaking change in libuv's process handling code, OpenGL [is not supported](https://github.com/stackgl/headless-gl#supported-platforms-and-nodejs-versions) when running Node.js version 12.13.1 through to 13.6.0 on macOS. A fix has been released in Node.js version 13.7.0. A fix for 12.x is pending. Other platforms are unaffected.
 
+### Docker
+
+A multi-platform and arch Docker image can be used for debugging and cross platform needs (requires [Docker](https://www.docker.com/) installed), as well as avoiding requiring `ffmpeg` and node dependencies installed locally.
+
+Docker image build:
+```bash
+npm run docker-build
+```
+
+After image is built, some `docker run` examples:
+```bash
+# run tests in docker container
+npm run docker-test
+# print CLI options
+npm run docker
+npm run docker -- --help
+# run on this repo's sample files in container
+npm run docker -- media/0.mp4 media/1.mp4
+# run with host machine files (make sure Docker has access / permissions)
+DIR=/path/to/vids/dir npm run docker -- file1.mov file2.avi
+```
+
+See [package.json](./package.json), and [Dockerfile](./Dockerfile) for more info.
+
 ## CLI
 
 ```sh
